@@ -1,7 +1,38 @@
 #include "visual_novel.h"
 #include <iostream>
 
+        // Clear the window
+        window.clear();
 
+        // Draw the background image
+        window.draw(backgroundSprite);
+
+        // Draw the overlay image
+        window.draw(overlaySprite);
+
+        // Display the window
+        window.display();
+    }
+
+    return 0;
+}
+
+void VisualNovel::run() {
+    // Set up the scenes
+     scene0.imagePath = "start_window.png"
+         Scene scene0;
+    scene0.dialogue = "Choose pronouns";
+    scene2.imagePath = "scene2.png";
+    switch scene2.choices = {
+        case 1:
+         DisplayImage("She/Her");
+         break;
+        case 2:
+         DisplayImage("He/Him");
+         break;
+        case3:
+         DisplayImage("They/Them");
+         break;
         
         
 
