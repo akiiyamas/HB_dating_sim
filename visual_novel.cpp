@@ -5,7 +5,7 @@ void VisualNovel::run() {
     // Set up the scenes
     
     Scene scene1;
-    scene1.dialogue = "I arrive at the house of my best friend. Hristo Botev. Also known as Botyo.";
+    scene1.dialogue = "I arrive at the house of my boyfriend. Hristo Botev. Also known as Botyo.";
     scene1.imagePath = "scene1.png";
     scenes_.push_back(scene1);
 
@@ -40,6 +40,22 @@ void VisualNovel::run() {
     scene7.imagePath = "scene7.png";
     scenes_.push_back(scene7);
 
+    Scene scene8;
+    scene8.dialogue = "O-oh. Y-yes about that. I'm sorry you had to find out like this, but it's better this way. *He looked sad*"; 
+    scene8.imagePath = "scene8.png";
+    scenes_.push_back(scene8);
+    // how do ppl talk to each other
+    // do moeto parvo libe koeto se gurmna. i was sad and then i ate meatballs. meatball good life good too.
+
+   Scene scene9;
+    scene9.dialogue = "We have been dating for 6 MONTHS! AND YOU BREAK UP WITH ME IN THE NEWSPAPER! HOW DARE YOU?!";
+    scene9.imagePath = "scene9.png";
+    scenes_.push_back(scene9); 
+
+    Scene scene10;
+    scene10.dialogue = "I'm sorry! *He cried out* But I have to leave to fight in war for Independance tomorrow. IT WAS THE ONLY WAY.";
+    scene10.imagePath = "scene10.png";
+    scenes_.push_back(scene10);
 
     Scene scene2;
     scene2.dialogue = "Choose an option:";
@@ -80,7 +96,7 @@ void VisualNovel::displayScene(const Scene& scene) {
 
 int VisualNovel::getPlayerChoice() {
     int choice;
-    std::cin >> choice;
+    std::cin >> choice; // hi
     return choice;
 }
 
