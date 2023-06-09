@@ -1,42 +1,9 @@
 #include "visual_novel.h"
 #include <iostream>
-
-        // Clear the window
-        window.clear();
-
-        // Draw the background image
-        window.draw(backgroundSprite);
-
-        // Draw the overlay image
-        window.draw(overlaySprite);
-
-        // Display the window
-        window.display();
-    }
-
-    return 0;
-}
+using namespace std;
 
 void VisualNovel::run() {
     // Set up the scenes
-     scene0.imagePath = "start_window.png"
-         Scene scene0;
-    scene0.dialogue = "Choose pronouns";
-    scene2.imagePath = "scene2.png";
-    switch scene2.choices = {
-        case 1:
-         DisplayImage("She/Her");
-         break;
-        case 2:
-         DisplayImage("He/Him");
-         break;
-        case3:
-         DisplayImage("They/Them");
-         break;
-        
-        
-
-         
     
     Scene scene1;
     scene1.dialogue = "I arrive at the house of my boyfriend. Hristo Botev. Also known as Botyo.";
@@ -90,6 +57,15 @@ void VisualNovel::run() {
     scene10.dialogue = "I'm sorry! *He cried out* But I have to leave to fight in war for Independance tomorrow. IT WAS THE ONLY WAY.";
     scene10.imagePath = "house_ui_botyo.png";
     scenes_.push_back(scene10);
+
+    Scene scene11;
+    scene11.dialogue = "THE ONLY WAY? YOU COULD HAVE TALKED TO ME, WROTE ME A LETTER! LITERALLY ANYTHING! BUT YOU CHOSE TO BREAK UP WITH ME IN THE NEWSPAPER.";
+    scene11.imagePath = "scene11.png";
+    scenes_.push_back(scene11);
+    // botev is based af
+    //bro gotta make money for way, hes so real
+
+
 
     Scene scene2;
     scene2.dialogue = "Choose an option:";
