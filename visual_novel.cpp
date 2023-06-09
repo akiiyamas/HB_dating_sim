@@ -11,7 +11,7 @@ void VisualNovel::run() {
     scenes_.push_back(scene1);
 
     Scene scene2;
-    scene2.dialogue = "I wanted discuss his newspaper and poetry. My favourite poem was Do moeto parvo libe. He obviously used me as inspiration.";
+    scene2.dialogue = "I wanted discuss his newspaper and poetry. My least favourite one was Do moeto parvo libe. He obviously used me as inspiration.";
     scene2.imagePath = "house_ui.png";
     scenes_.push_back(scene2);
 
@@ -63,9 +63,19 @@ void VisualNovel::run() {
     scene11.imagePath = "scene11.png";
     scenes_.push_back(scene11);
     // botev is based af
-    //bro gotta make money for way, hes so real
+    // bro gotta make money for way, hes so real
+
+    Scene scene12;
+    scene12.dialogue = "I WROTE YOU A POEM AND YOU ARE COMPLAINING THAT I'M BREAKING UP WITH YOU? WOMAN, I WILL SERVE MY DUTY AS A MAN AND SAVE THIS COUNTRY";
+    scene12.imagePath = "scene12.png";
+    scenes_.push_back(scene12);
+    // i didint think id ever write botev being lowkey misogynystic but look at what programming did to me
 
 
+    Scene scene1;
+    scene1.dialogue = "Welcome to the Visual Novel!";
+    scene1.imagePath = "scene1.png";
+    scenes_.push_back(scene1);
 
     Scene scene2;
     scene2.dialogue = "Choose an option:";
