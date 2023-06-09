@@ -3,6 +3,64 @@
 
 void VisualNovel::run() {
     // Set up the scenes
+     scene0.imagePath = "start_window.png"
+         Scene scene0;
+    scene0.dialogue = "Choose pronouns";
+    scene2.imagePath = "scene2.png";
+    scene2.choices = {
+        {"Option A", 1},
+        {"Option B", 2},
+        {"Option C", 3}
+        
+        #include <SFML/Graphics.hpp>
+
+int main() {
+    // Create the main window
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Game Window");
+
+    // Load the background image
+    sf::Texture backgroundTexture;
+    if (!backgroundTexture.loadFromFile("bg.png")) {
+        return -1; // Failed to load the background image
+    }
+    sf::Sprite backgroundSprite(backgroundTexture);
+
+    // Load the overlay image
+    sf::Texture overlayTexture;
+    if (!overlayTexture.loadFromFile("she.png")) {
+        return -1; // Failed to load the overlay image
+    }
+    sf::Sprite overlaySprite(overlayTexture);
+
+    // Set the position of the overlay image within the background image
+    overlaySprite.setPosition(100, 100);
+
+    // Game loop
+    while (window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.close();
+            }
+        }
+
+        // Clear the window
+        window.clear();
+
+        // Draw the background image
+        window.draw(backgroundSprite);
+
+        // Draw the overlay image
+        window.draw(overlaySprite);
+
+        // Display the window
+        window.display();
+    }
+
+    return 0;
+}
+
+         
     
     Scene scene1;
     scene1.dialogue = "I arrive at the house of my boyfriend. Hristo Botev. Also known as Botyo.";
