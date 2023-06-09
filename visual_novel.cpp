@@ -3,18 +3,7 @@
 
 //bro what
 
-void VisualNovel::run() {
-    // Set up the scenes
-     scene0.imagePath = "start_window.png"
-         Scene scene0;
-    scene0.dialogue = "Choose pronouns";
-    scene2.imagePath = "scene2.png";
-    scene2.choices = {
-        {"She/Her", 1},
-        {"He/Him", 2},
-        {"They/Them", 3}
-        
-        #include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
 int main() {
     // Create the main window
@@ -61,6 +50,19 @@ int main() {
 
     return 0;
 }
+
+void VisualNovel::run() {
+    // Set up the scenes
+     scene0.imagePath = "start_window.png"
+         Scene scene0;
+    scene0.dialogue = "Choose pronouns";
+    scene2.imagePath = "scene2.png";
+    scene2.choices = {
+        {"She/Her", 1},
+        {"He/Him", 2},
+        {"They/Them", 3}
+        
+        
 
          
     
