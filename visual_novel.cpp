@@ -20,7 +20,7 @@ void VisualNovel::run() {
     scenes_.push_back(scene3);
 
     Scene scene4;
-    scene4.dialogue = "Oh! I didn't expect you to show today. How are you doing today?";
+    scene4.dialogue = "Oh! I didn't expect you to show today. How are you doing?";
     scene4.imagePath = "scene4.png";
     scenes_.push_back(scene4);
 
