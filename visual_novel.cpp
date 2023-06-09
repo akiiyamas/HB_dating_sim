@@ -8,9 +8,9 @@ void VisualNovel::run() {
     scene0.dialogue = "Choose pronouns";
     scene2.imagePath = "scene2.png";
     scene2.choices = {
-        {"Option A", 1},
-        {"Option B", 2},
-        {"Option C", 3}
+        {"She/Her", 1},
+        {"He/Him", 2},
+        {"They/Them", 3}
         
         #include <SFML/Graphics.hpp>
 
@@ -20,7 +20,7 @@ int main() {
 
     // Load the background image
     sf::Texture backgroundTexture;
-    if (!backgroundTexture.loadFromFile("bg.png")) {
+    if (!backgroundTexture.loadFromFile("pronoun_start.png")) {
         return -1; // Failed to load the background image
     }
     sf::Sprite backgroundSprite(backgroundTexture);
@@ -33,7 +33,7 @@ int main() {
     sf::Sprite overlaySprite(overlayTexture);
 
     // Set the position of the overlay image within the background image
-    overlaySprite.setPosition(100, 100);
+    overlaySprite.setPosition(20, 20);
 
     // Game loop
     while (window.isOpen()) {
@@ -64,55 +64,55 @@ int main() {
     
     Scene scene1;
     scene1.dialogue = "I arrive at the house of my boyfriend. Hristo Botev. Also known as Botyo.";
-    scene1.imagePath = "scene1.png";
+    scene1.imagePath = "house_ui.png";
     scenes_.push_back(scene1);
 
     Scene scene2;
     scene2.dialogue = "I wanted discuss his newspaper and poetry. My favourite poem was Do moeto parvo libe. He obviously used me as inspiration.";
-    scene2.imagePath = "scene2.png";
+    scene2.imagePath = "house_ui.png";
     scenes_.push_back(scene2);
 
     Scene scene3;
     scene3.dialogue = "I knocked on the door. I wait for him to open and let me in.";
-    scene3.imagePath = "scene3.png";
+    scene3.imagePath = "house_ui.png";
     scenes_.push_back(scene3);
 
     Scene scene4;
     scene4.dialogue = "Oh! I didn't expect you to show today. How are you doing?";
-    scene4.imagePath = "scene4.png";
+    scene4.imagePath = "house_ui_botyo.png";
     scenes_.push_back(scene4);
 
     Scene scene5;
     scene5.dialogue = "I'm good, thank you! You posted your first newspaper Duma na balgarskite emigranti . Congratulations, Botyo!";
-    scene5.imagePath = "scene5.png";
+    scene5.imagePath = "house_ui_botyo.png";
     scenes_.push_back(scene5);
 
     Scene scene6;
     scene6.dialogue = "Thank you! It was so hard to write all those articles. And I finally have a place to post my poems."; 
-    scene6.imagePath = "scene6.png";
+    scene6.imagePath = "house_ui_botyo.png";
     scenes_.push_back(scene6);
     //before the newspaper he had to post them in spisanie playboy
 
     Scene scene7;
     scene7.dialogue = "Finally more people will read your beautiful poems. I wanted to discuss some of your poems. Specifically Do moeto parvo libe.";
-    scene7.imagePath = "scene7.png";
+    scene7.imagePath = "house_ui_botyo.png";
     scenes_.push_back(scene7);
 
     Scene scene8;
     scene8.dialogue = "O-oh. Y-yes about that. I'm sorry you had to find out like this, but it's better this way. *He looked sad*"; 
-    scene8.imagePath = "scene8.png";
+    scene8.imagePath = "house_ui_botyo.png";
     scenes_.push_back(scene8);
     // how do ppl talk to each other
     // do moeto parvo libe koeto se gurmna. i was sad and then i ate meatballs. meatball good life good too.
 
    Scene scene9;
     scene9.dialogue = "We have been dating for 6 MONTHS! AND YOU BREAK UP WITH ME IN THE NEWSPAPER! HOW DARE YOU?!";
-    scene9.imagePath = "scene9.png";
+    scene9.imagePath = "house_ui_botyo.png";
     scenes_.push_back(scene9); 
 
     Scene scene10;
     scene10.dialogue = "I'm sorry! *He cried out* But I have to leave to fight in war for Independance tomorrow. IT WAS THE ONLY WAY.";
-    scene10.imagePath = "scene10.png";
+    scene10.imagePath = "house_ui_botyo.png";
     scenes_.push_back(scene10);
 
     Scene scene2;
