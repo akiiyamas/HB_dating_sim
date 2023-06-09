@@ -45,7 +45,7 @@ void VisualNovel::run() {
     scene8.imagePath = "scene8.png";
     scenes_.push_back(scene8);
     // how do ppl talk to each other
-    // do moeto parvo libe koeto se gurmna. i was sad and then i ate meatballs. meatball good life good too.
+    // do moeto parvo libe koeto se gurmna. i was sad and then i ate meatballs. meatball good. life good too.
 
    Scene scene9;
     scene9.dialogue = "We have been dating for 6 MONTHS! AND YOU BREAK UP WITH ME IN THE NEWSPAPER! HOW DARE YOU?!";
