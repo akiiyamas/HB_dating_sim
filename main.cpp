@@ -1,6 +1,6 @@
 #include "visual_novel.h"
 #include <iostream>
-namespace std{};
+using namespace std;
 
 int main() {
     VisualNovel visualNovel;
