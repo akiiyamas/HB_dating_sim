@@ -1,6 +1,8 @@
 #include "visual_novel.h"
 #include <iostream>
 
+//bro what
+
 void VisualNovel::run() {
     // Set up the scenes
      scene0.imagePath = "start_window.png"
