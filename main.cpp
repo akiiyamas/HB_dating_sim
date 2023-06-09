@@ -1,4 +1,6 @@
 #include "visual_novel.h"
+#include <iostream>
+namespace std{};
 
 int main() {
     VisualNovel visualNovel;
