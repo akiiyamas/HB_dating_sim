@@ -70,19 +70,14 @@ void VisualNovel::run() {
     scene12.imagePath = "scene12.png";
     scenes_.push_back(scene12);
     // i didint think id ever write botev being lowkey misogynystic but look at what programming did to me
-
-
-    Scene scene1;
-    scene1.dialogue = "Welcome to the Visual Novel!";
-    scene1.imagePath = "scene1.png";
-    scenes_.push_back(scene1);
+    // i really hope the teacher thinks this is funny and not weird 
 
     Scene scene2;
-    scene2.dialogue = "Choose an option:";
+    scene2.dialogue = "idk make a choice";
     scene2.imagePath = "scene2.png";
     scene2.choices = {
-        {"Option A", 1},
-        {"Option B", 2},
+        {"Option A", 1},  // bro i forgot what the choices were gonna be
+        {"Option B", 2},  //it was prob gonna be smth like funny i swear
         {"Option C", 3}
     };
     scenes_.push_back(scene2);
@@ -96,7 +91,7 @@ void VisualNovel::run() {
         
         if (currentScene.choices.empty()) {
             // End of the visual novel
-            std::cout << "Thank you for playing the Visual Novel!" << std::endl;
+            std::cout << "Thank you for playing!" << std::endl;
             break;
         }
         
