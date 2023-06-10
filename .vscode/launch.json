@@ -1,20 +1,12 @@
 {
   "version": "0.2.0",
   "configurations": [
+
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": [
-                "-std=c++17",
-                "-Wall",
-                "-I<path_to_SFML>/include",
-                "-L<path_to_SFML>/lib",
-                "-lsfml-graphics",
-                "-lsfml-window",
-                "-lsfml-system",
-                "main.cpp"
-      ],
+      "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/Users/Acer/Desktop/vs code stuff/HB_dating_sim",
@@ -23,9 +15,9 @@
       "miDebuggerPath": "gdb",
       "setupCommands": [
         {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
+          "description": "run target",
+          "text": "target-run",
+          "ignoreFailures": false
         }
       ]
     }
